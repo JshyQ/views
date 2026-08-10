@@ -4,7 +4,7 @@ loadConfig()
 
 const { APPLICATION_NAME, APPLICATION_VERSION, DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME } = process.env
 
-const QR_TERMINAL = process.env.QR_TERMINAL?.toLowerCase() === 'true'
+const QR_TERMINAL = process.env.QR_TERMINAL?.toLowerCase() === 'false'
 const PORT = +process.env.PORT || 8080
 const BOT_PASSWORD = process.env.BOT_PASSWORD?.trim()
 const DB_PORT = +process.env.DB_PORT
